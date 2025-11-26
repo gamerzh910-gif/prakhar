@@ -11,10 +11,10 @@ OWNER = int(environ.get("OWNER", "7549194607"))
 CREDIT = environ.get("CREDIT", "@@leavingproperty")
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 
-TOTAL_USER = os.environ.get('TOTAL_USERS', '7549194607').split(',')
+TOTAL_USER = os.environ.get('TOTAL_USERS', '8140993079').split(',')
 TOTAL_USERS = [int(user_id) for user_id in TOTAL_USER]
 
-AUTH_USER = os.environ.get('AUTH_USERS', '7549194607').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '8140993079').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
